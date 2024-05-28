@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="2.css">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="add-task">
+      <input type="text" id="taskInput" placeholder="Add a new task">
+      <input type="date" class="setDate" id="taskDate">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <div class="filter-options">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('active')">Active</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+    <div id="taskList">
+      <!-- Tasks will be dynamically added here -->
+    </div>
+    <div class="task-footer">
+      <p id="taskCount"></p>
+      <button onclick="clearCompleted()">Clear Completed</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
